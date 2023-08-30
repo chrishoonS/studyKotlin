@@ -1,5 +1,6 @@
 // 코틀린 놀이터 : https://play.kotlinlang.org/
 
+@Suppress("DIVISION_BY_ZERO")
 fun main() {
 //    val a = readLine()!!.toInt()
 //    val b: Int = readLine()!!.toInt()
