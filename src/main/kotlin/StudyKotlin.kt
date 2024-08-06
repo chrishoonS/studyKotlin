@@ -1,6 +1,8 @@
+import java.util.*
+
 // 코틀린 놀이터 : https://play.kotlinlang.org/
 
-@Suppress("DIVISION_BY_ZERO")
+//@Suppress("DIVISION_BY_ZERO")
 fun main() {
 //    val a = readLine()!!.toInt()
 //    val b: Int = readLine()!!.toInt()
@@ -12,16 +14,21 @@ fun main() {
 //    println(1.0 / Double.NEGATIVE_INFINITY)   // - 0.0
 //    println(2 - Double.POSITIVE_INFINITY)   // -Infinity
 //    println(3 * Float.NaN)   // NaN
+    val hello = "Hello, world!"
+//    val name = readLine()
+    println("Hello".isEmpty())
+    println("".isEmpty())
+    println("Hello".substring(2))
+    println("Hello".substring(1,3))
+    println("Hello".startsWith("Hel"))
+    println("Hello".endsWith("lo"))
+    println("abcabc".indexOf('b'))
+    println("abcabc".indexOf("ca"))
+    println("abcabc".indexOf("cd"))
+    println("abcabc".indexOf('b', 2))
+    println("abcabc".indexOf("ab", 2))
+//    val message = """ Hello, $name,
+//        Today is${Date() } """.trimIndent()
 
-    val x = 1;
-    val y = 0;
-
-    println(x or y)                         // 1
-    println(( x == 0 ) || ( y == 0 ))       // false
-    println((x == 1) and ( y != 1 ))        // false
-    println(x and y)                        // 1
-    println(x xor y)                        // 0
-    println((x == 1) xor ( y != 1 ))        // true
-    println( x == 1 || (y / (x - 1)) != 1)  // true
-    println( x != 1 && (y / (x - 1)) != 1)  // false
+//    println("Hello, ${name}!\nToday is ${Date()}")
 }
